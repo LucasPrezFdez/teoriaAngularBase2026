@@ -1,0 +1,10 @@
+<!-- directiva *ngIf (antiguo) -->
+
+<p>El valor del nuemro es: {{numero}}</p>
+<div class="flex gap-4">
+    <button (click)="incrementar()" class="cursor-pointer border rounded-2xl p-1">Incrementar</button>
+    <button (click)="deCrementar()" class="cursor-pointer border rounded-2xl p-1">Decrementar</button>
+</div>
+<p *ngIf="numero%2===0">El nuero es par</p>
+<!-- en este caso ambas son validas pero es mucho mejor practica delegar el calculo a la logica de negocio -->
+<p *ngIf="isOdd()">El nuero es impar</p>

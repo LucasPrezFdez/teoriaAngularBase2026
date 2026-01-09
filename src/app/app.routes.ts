@@ -4,6 +4,14 @@ import { Ejemplo1 } from './components/ejemplo1/ejemplo1';
 import { Ejemplo2 } from './components/ejemplo2/ejemplo2';
 import { Ejemplo3 } from './components/ejemplo3/ejemplo3';
 import { Ejemplo3b } from './components/ejemplo3b/ejemplo3b';
+import { Ejemplo4 } from './components/ejemplo4/ejemplo4';
+import { Ejemplo4b } from './components/ejemplo4b/ejemplo4b';
+import { Ejemplo5 } from './components/ejemplo5/ejemplo5';
+import { Ejemplo6 } from './components/ejemplo6/ejemplo6';
+import { Ejemplo7 } from './components/ejemplo7/ejemplo7';
+import { Ejemplo8 } from './components/ejemplo8/ejemplo8';
+import { Ejemplo9 } from './components/ejemplo9/ejemplo9';
+import { Ejemplo10 } from './components/ejemplo10/ejemplo10';
 
 export const routes: Routes = [
   { path: 'ej0', component: Ejemplo0 },
@@ -11,4 +19,12 @@ export const routes: Routes = [
   { path: 'ej2', component: Ejemplo2 },
   { path: 'ej3', component: Ejemplo3 },
   { path: 'ej3b', component: Ejemplo3b },
+  { path: 'ej4', component: Ejemplo4 },
+  { path: 'ej4b', component: Ejemplo4b },
+  { path: 'ej5', component: Ejemplo5 },
+  { path: 'ej6', component: Ejemplo6 },
+  { path: 'ej7', component: Ejemplo7 },
+  { path: 'ej8', component: Ejemplo8 },
+  { path: 'ej9', component: Ejemplo9 },
+  { path: 'ej10', component: Ejemplo10 },
 ];

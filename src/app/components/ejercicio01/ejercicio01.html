@@ -1,0 +1,9 @@
+<div>
+  <h1>Listado de numeros impares</h1>
+  @for (num of numerosAleatorios; track num) { @if (isOdd(num)) { @if (isMoreThan100(num)) {
+  <p class="text-red-500">{{ num }}</p>
+  <p>,</p>
+  }@else {
+  <p>{{ num }},</p>
+  } } }
+</div>

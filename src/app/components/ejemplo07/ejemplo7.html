@@ -1,0 +1,9 @@
+<!-- property bounds en styles y class -->
+
+<div class="pink">Esto es un div rosa</div>
+<!-- si cambio el theme deja de ser rosa (ejemplo7.ts) -->
+<div [class.pink]="theme==='pastel'">Esto es un div</div>
+<div [class.pink]="theme==='dark'">Esto es un div</div>
+<div [ngClass]="{'bg-red-200' : theme === 'pastel'}">Esto es un div</div>
+<div class="{{theme === 'pastel' ? 'bg-red-200' : ''}}">Esto es un div</div>
+<div class="p-4 rounded" [ngClass]="{'text-red-300' : theme==='pastel'}">Esto es un div</div>

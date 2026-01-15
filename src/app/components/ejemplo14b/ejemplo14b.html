@@ -1,0 +1,6 @@
+<div>Listado de personajes de Rick and Morty</div>
+
+@let personajes = (personajes$ | async)?.results; @for (personaje of personajes; track personaje) {
+<p>{{ personaje.name }}</p>
+<img [src]="personaje.image" width="100px" />
+}

@@ -1,0 +1,4 @@
+<!-- Templates -->
+
+<div *ngIf="user.isAdmin; else sinPersmisos">Eres administrador</div>
+<ng-template #sinPersmisos>No eres administrador</ng-template>

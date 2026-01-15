@@ -1,0 +1,12 @@
+<!-- Crea un formulario donde el usuario pueda ntroducir altura y peso
+ Cuando el formulario se envie, mostrará el IMC (indice de masa corporal) de
+ esa persona.
+  -->
+
+<form class="border rounded-2xl flex flex-col gap-4 p-4 max-w-2xs">
+  <label>Altura: <input class="border rounded p-2" name="altura" [(ngModel)]="altura" /></label>
+  <label>Peso: <input class="border rounded p-2" name="peso" [(ngModel)]="peso" /></label>
+  <button class="bg-blue-500 text-white border-black border rounded p-2 hover:bg-blue-600">
+    Login
+  </button>
+</form>

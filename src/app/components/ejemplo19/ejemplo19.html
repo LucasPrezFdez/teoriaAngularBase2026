@@ -1,0 +1,25 @@
+<!-- Formularios reactivos -->
+
+<form [formGroup]="form" (ngSubmit)="handleSubmit()">
+  <label>Nombre: <input class="border" type="text" name="name" formControlName="name" /></label>
+  @if (form.get('name')?.invalid && form.get('name')?.dirty) {
+  <small>
+    @if (form.get('name')?.hasError('required')) {
+    <p class="text-red-400 text-sm">El campo es obligatorio</p>
+    } @if (form.get('name')?.hasError('minlength')) {
+    <p class="text-red-400 text-sm">El campo tiene que ser mayor de 3 caracteres</p>
+    }
+  </small>
+  }
+  <label>Email: <input class="border" type="text" name="email" formControlName="email" /></label>
+  @if (form.get('email')?.invalid && form.get('email')?.dirty) {
+  <small>
+    @if (form.get('email')?.hasError('required')) {
+    <p class="text-red-400 text-sm">El campo es obligatorio</p>
+    } @if (form.get('email')?.hasError('minlength')) {
+    <p class="text-red-400 text-sm">El campo tiene que ser mayor de 5 caracteres</p>
+    }
+  </small>
+  }
+  <button [disabled]="form.invalid">Enviar</button>
+</form>

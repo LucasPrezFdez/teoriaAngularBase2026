@@ -1,1 +1,12 @@
-<p>ejemplo18 works!</p>
+<!-- queery params -->
+<!-- http://localhost:4200/ej18?titulo=xxx&especialidad=yyy -->
+
+p
+
+<p>
+  Me han pasado los parametros (prueba con este link:
+  http://localhost:4200/ej18?titulo=xxx&especialidad=yyy)
+</p>
+<p>Titulo: {{ titulo }}</p>
+<p>especiallidad {{ especialidad }}</p>
+<button (click)="cambiarParametros()">Cambiar Parametros</button>

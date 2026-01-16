@@ -8,6 +8,11 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './ejercicio02.css',
 })
 export class Ejercicio02 {
-  altura = '';
-  peso = '';
+  altura = 0;
+  peso = 0;
+  imc = 0;
+
+  handleSubmit() {
+    this.imc = this.peso / (this.altura * this.altura);
+  }
 }

@@ -1,0 +1,5 @@
+<h2>Filtado de productos</h2>
+<input [formControl]="search" placeholder="Producto a buscar..." />
+<ul>
+  <li *ngFor="let f of filtro$ | async">{{ f }}</li>
+</ul>
